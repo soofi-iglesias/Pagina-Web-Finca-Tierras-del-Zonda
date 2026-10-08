@@ -280,6 +280,12 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
   .text-blanco-crema {
     color: #fffef8;
   }
