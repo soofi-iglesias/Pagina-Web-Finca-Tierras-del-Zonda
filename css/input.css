@@ -4,33 +4,89 @@
 
 @layer components {
 
-    /* El contenedor principal del botón */
-    .btn-linktree {
-        @apply relative w-full max-w-xl px-14 py-4 bg-blanco-off-white rounded-xl flex justify-center items-center gap-8 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:bg-blanco-crema active:scale-95;
+    /* ==========================================
+       1. ESTILOS BASE (CELULAR)
+       ========================================== */
 
-        /* La sombra exacta que te dio Figma (con el color marron-compost en rgba) */
+    .fondo-sol {
+        @apply fixed left-1/2 -translate-x-1/2 -bottom-200 w-300 h-250 bg-verde-oliva opacity-35 blur-[100px] rounded-full pointer-events-none z-0;
+    }
+
+    .logo-finca {
+        @apply w-20 h-20 rounded-full object-cover shadow-lg;
+    }
+
+    .txt-subtitulo {
+        @apply text-lg font-normal font-['Baskerville'] uppercase tracking-wide;
+    }
+
+    .txt-titulo {
+        @apply text-2xl font-normal font-['Baskerville'] uppercase tracking-wide text-center;
+    }
+
+    .txt-bajada {
+        @apply text-xs font-normal font-['Montserrat'] text-center max-w-lg leading-relaxed;
+    }
+
+    .btn-linktree {
+        @apply relative w-full max-w-xl px-6 py-4 bg-blanco-off-white rounded-xl flex justify-center items-center gap-4 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:bg-blanco-crema active:scale-95;
         box-shadow: 4px 4px 15px 0px rgba(34, 31, 19, 0.20);
     }
 
-    /* El texto del botón */
     .btn-texto {
-        @apply text-center text-verde-tierra text-xl font-extrabold font-['Montserrat'] uppercase z-10;
+        @apply text-center text-verde-tierra text-base font-extrabold font-['Montserrat'] uppercase z-10;
     }
 
-    /* El contenedor del ícono (lo deja fijo a la izquierda) */
     .btn-icono {
-        @apply absolute left-6 top-1/2 -translate-y-1/2 flex justify-center items-center w-8 h-8 z-10 text-verde-tierra;
+        @apply absolute left-4 top-1/2 -translate-y-1/2 flex justify-center items-center w-6 h-6 z-10 text-verde-tierra;
+    }
+
+
+    /* ==========================================
+       2. RESPONSIVE (PANTALLAS GRANDES / PC)
+       ========================================== */
+    @media (min-width: 768px) {
+
+        .fondo-sol {
+            /* En PC lo hacemos más grande y lo bajamos más */
+            @apply -bottom-[500px] w-[1000px] h-[1000px] blur-[150px];
+        }
+
+        .logo-finca {
+            @apply w-28 h-28;
+        }
+
+        .txt-subtitulo {
+            @apply text-2xl;
+        }
+
+        .txt-titulo {
+            @apply text-4xl;
+        }
+
+        .txt-bajada {
+            @apply text-sm;
+        }
+
+        .btn-linktree {
+            @apply px-14 gap-8;
+        }
+
+        .btn-texto {
+            @apply text-xl;
+        }
+
+        .btn-icono {
+            @apply left-6 w-8 h-8;
+        }
     }
 }
 
 @layer utilities {
-
-    /* Clase que vamos a aplicarle al circulito cada vez que hagamos clic */
     .efecto-ripple {
         animation: expandir-ripple 0.6s ease-out forwards;
     }
 
-    /* La animación: arranca en tamaño 0 y opacidad alta, y termina grande y transparente */
     @keyframes expandir-ripple {
         0% {
             transform: scale(0);
@@ -43,23 +99,15 @@
         }
     }
 
-    .animacion-sol {
-        /* Dura 6 segundos, entra y sale suavemente (ease-in-out), y se repite para siempre */
-        animation: latido-sol 6s ease-in-out infinite;
-    }
-
-    /* Le decimos exactamente qué hacer en cada momento */
     @keyframes latido-sol {
 
         0%,
         100% {
             opacity: 0.2;
-            /* Arranca y termina tenue */
         }
 
         50% {
             opacity: 0.4;
-            /* A la mitad del tiempo (a los 3 seg) brilla mucho más */
         }
     }
 }
