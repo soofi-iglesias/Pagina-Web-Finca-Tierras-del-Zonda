@@ -9,7 +9,7 @@
        ========================================== */
 
     .fondo-sol {
-        @apply fixed left-1/2 -translate-x-1/2 -bottom-0 w-95 h-155 bg-verde-oliva opacity-55 blur-[100px] rounded-full pointer-events-none z-0;
+        @apply fixed left-1/2 -translate-x-1/2 -bottom-0 w-95 h-155 bg-verde-tierra opacity-55 blur-[100px] rounded-full pointer-events-none z-0;
     }
 
     .logo-finca {
