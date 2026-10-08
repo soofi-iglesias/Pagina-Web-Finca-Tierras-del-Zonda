@@ -15,6 +15,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linktree - Tierras del Zonda</title>
+    <link rel="icon" type="image/svg+xml" href="./img/Brand Mark.svg" />
 
     <!-- Tailwind -->
     <link rel="stylesheet" href="css/output.css" />
@@ -29,62 +30,54 @@
   </head>
 
   <body class="bg-verde-tierra antialiased text-blanco-crema">
-    <main
-      class="relative min-h-screen flex flex-col justify-center items-center p-4 overflow-hidden gap-10"
-    >
+    <main class="relative min-h-screen flex flex-col justify-center items-center p-4 overflow-hidden gap-10">
 
-    <!-- Header -> Logo + Nombre + Leyenda -->
-      <div
-        class="relative z-10 flex flex-col justify-center items-center gap-10 w-full max-w-2xl"
-      >
-        <div class="flex flex-col justify-start items-center gap-7">
-          <img src="./img/Brand Mark.svg" alt="Icono Tierras del Zonda" class="w-24 h-24 rounded-full flex items-center justify-center overflow-hidden">
-          </div>
+      <!-- CONTENEDOR PRINCIPAL (Envuelve todo y le da el ancho máximo) -->
+      <div class="relative z-10 flex flex-col justify-center items-center gap-10 w-full max-w-2xl">
 
-          <div class="flex flex-col justify-start items-center gap-2">
-            <h2
-              class="text-2xl font-normal font-['Baskerville'] uppercase tracking-wide"
-            >
+        <!-- BLOQUE PERFIL: Logo + Nombre + Descripcion -->
+        <header class="flex flex-col justify-center items-center gap-6">
+          
+          <!-- Logo -->
+          <img 
+            src="./img/Brand Mark.svg" 
+            alt="Logo Tierras del Zonda" 
+            class="w-24 h-24 rounded-full object-cover"
+          >
+
+          <!-- Títulos -->
+          <div class="flex flex-col justify-center items-center gap-2">
+            <h2 class="text-2xl font-normal font-['Baskerville'] uppercase tracking-wide">
               Finca
             </h2>
-            <h1
-              class="text-4xl font-normal font-['Baskerville'] uppercase tracking-wide text-center"
-            >
+            <h1 class="text-4xl font-normal font-['Baskerville'] uppercase tracking-wide text-center">
               Tierras del Zonda
             </h1>
           </div>
 
-          <p
-            class="text-sm font-normal font-['Montserrat'] text-center max-w-lg leading-relaxed"
-          >
+          <!-- Bajada -->
+          <p class="text-sm font-normal font-['Montserrat'] text-center max-w-lg leading-relaxed">
             Somos un emprendimiento familiar nacido en 2005. Desde el suelo
             árido de San Juan, elaboramos un Aceite de Oliva Virgen Extra, que
             nos enorgullece compartir en nuestra propia mesa.
           </p>
-        </div>
+        </header>
 
-        <!-- SECCIÓN BOTONES (Links) -->
+        <!-- ==========================================
+             2. BLOQUE BOTONES: Todos los Links 
+             ========================================== -->
         <nav class="flex flex-col justify-start items-center gap-4 w-full">
+          
           <!-- Botón WhatsApp -->
-          <a
-            href="https://wa.me/c/5491166126250"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-linktree"
-          >
+          <a href="https://wa.me/c/5491166126250" target="_blank" rel="noopener noreferrer" class="btn-linktree">
             <div class="btn-icono">
-              <img src="./img/icons/Whatsapp.svg" alt="Icono WhatsApp" class="w-7 h-7">
+              <img src="./img/icons/WhatsApp.svg" alt="Icono WhatsApp" class="w-7 h-7">
             </div>
             <span class="btn-texto">WhatsApp</span>
           </a>
 
           <!-- Botón Instagram -->
-          <a
-            href="https://www.instagram.com/tierrasdelzonda/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-linktree"
-          >
+          <a href="https://www.instagram.com/tierrasdelzonda/" target="_blank" rel="noopener noreferrer" class="btn-linktree">
             <div class="btn-icono">
               <img src="./img/icons/Instagram.svg" alt="Icono Instagram" class="w-7 h-7">
             </div>
@@ -92,12 +85,7 @@
           </a>
 
           <!-- Botón Facebook -->
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-linktree"
-          >
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-linktree">
             <div class="btn-icono">
               <img src="./img/icons/Facebook.svg" alt="Icono Facebook" class="w-7 h-7">
             </div>
@@ -105,12 +93,7 @@
           </a>
 
           <!-- Botón Nuestra Web -->
-          <a
-            href="https://www.tierrasdelzonda.com.ar"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-linktree"
-          >
+          <a href="https://www.tierrasdelzonda.com.ar" target="_blank" rel="noopener noreferrer" class="btn-linktree">
             <div class="btn-icono">
               <img src="./img/icons/Sol.svg" alt="Icono Tierras del Zonda" class="w-7 h-7">
             </div>
@@ -118,19 +101,16 @@
           </a>
 
           <!-- Botón Tienda Nube -->
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-linktree"
-          >
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-linktree">
             <div class="btn-icono">
               <img src="./img/icons/Carrito.svg" alt="Icono Tienda Nube" class="w-7 h-7">
             </div>
             <span class="btn-texto">Tienda Nube</span>
           </a>
+
         </nav>
       </div>
+      
     </main>
   </body>
 </html>
