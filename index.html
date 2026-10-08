@@ -14,6 +14,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Previsualización para WhatsApp y Redes Sociales -->
+    <meta property="og:title" content="Finca Tierras del Zonda" />
+    <meta
+      property="og:description"
+      content="Aceite de Oliva Virgen Extra elaborado desde el suelo árido de San Juan."
+    />
+    <!-- Idealmente, subí una foto apaisada de la finca a tu carpeta img y poné la ruta acá -->
+    <meta property="og:image" content="./img/Brand Mark.svg" />
+    <meta property="og:type" content="website" />
+
     <title>Linktree - Tierras del Zonda</title>
     <link rel="icon" type="image/svg+xml" href="./img/Brand Mark.svg" />
 
@@ -30,20 +41,25 @@
   </head>
 
   <body class="bg-verde-tierra antialiased text-blanco-crema">
-    
     <!-- Fijate el p-20 acá (son exactamente 80px de padding fijo en todos lados) -->
-    <main class="relative min-h-screen flex flex-col justify-center items-center py-20 px-10 overflow-hidden gap-10">
-
+    <main
+      class="relative min-h-screen flex flex-col justify-center items-center py-20 px-10 overflow-hidden gap-10"
+    >
       <!-- FONDO -->
       <div class="fondo-sol"></div>
 
       <!-- CONTENEDOR PRINCIPAL -->
-      <div class="relative z-10 flex flex-col justify-center items-center gap-10 w-full max-w-2xl">
-        
+      <div
+        class="relative z-10 flex flex-col justify-center items-center gap-10 w-full max-w-2xl"
+      >
         <!-- BLOQUE PERFIL -->
         <header class="flex flex-col justify-center items-center gap-6">
-          <img src="./img/Brand Mark.svg" alt="Logo Tierras del Zonda" class="logo-finca" />
-          
+          <img
+            src="./img/Brand Mark.svg"
+            alt="Logo Tierras del Zonda"
+            class="logo-finca"
+          />
+
           <div class="flex flex-col justify-center items-center gap-2">
             <h2 class="txt-subtitulo">Finca</h2>
             <h1 class="txt-titulo">Tierras del Zonda</h1>
@@ -58,47 +74,98 @@
 
         <!-- BLOQUE BOTONES -->
         <nav class="flex flex-col justify-start items-center gap-4 w-full">
-            
-          <a href="https://wa.me/c/5491166126250" target="_blank" rel="noopener noreferrer" class="btn-linktree">
+          <a
+            href="https://wa.me/c/5491166126250"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
             <div class="btn-icono">
-              <img src="./img/icons/Whatsapp.svg" alt="Icono WhatsApp" class="w-full h-full object-contain" />
+              <img
+                src="./img/icons/Whatsapp.svg"
+                alt="Icono WhatsApp"
+                class="w-full h-full object-contain"
+              />
             </div>
             <span class="btn-texto">WhatsApp</span>
           </a>
 
-          <a href="https://www.instagram.com/tierrasdelzonda/" target="_blank" rel="noopener noreferrer" class="btn-linktree">
+          <a
+            href="https://www.instagram.com/tierrasdelzonda/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
             <div class="btn-icono">
-              <img src="./img/icons/Instagram.svg" alt="Icono Instagram" class="w-full h-full object-contain" />
+              <img
+                src="./img/icons/Instagram.svg"
+                alt="Icono Instagram"
+                class="w-full h-full object-contain"
+              />
             </div>
             <span class="btn-texto">Instagram</span>
           </a>
 
-          <a href="https://www.facebook.com/profile.php?id=61593889686607&ref=1" target="_blank" rel="noopener noreferrer" class="btn-linktree">
+          <a
+            href="https://www.facebook.com/profile.php?id=61593889686607&ref=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
             <div class="btn-icono">
-              <img src="./img/icons/Facebook.svg" alt="Icono Facebook" class="w-full h-full object-contain" />
+              <img
+                src="./img/icons/Facebook.svg"
+                alt="Icono Facebook"
+                class="w-full h-full object-contain"
+              />
             </div>
             <span class="btn-texto">Facebook</span>
           </a>
 
-          <a href="https://www.tierrasdelzonda.com.ar" target="_blank" rel="noopener noreferrer" class="btn-linktree">
+          <a
+            href="https://www.tierrasdelzonda.com.ar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
             <div class="btn-icono">
-              <img src="./img/icons/Sol.svg" alt="Icono Tierras del Zonda" class="w-full h-full object-contain" />
+              <img
+                src="./img/icons/Sol.svg"
+                alt="Icono Tierras del Zonda"
+                class="w-full h-full object-contain"
+              />
             </div>
             <span class="btn-texto">Nuestra Web</span>
           </a>
 
-          <a href="https://www.tiendasnube.com.ar/tierrasdelzonda" target="_blank" rel="noopener noreferrer" class="btn-linktree">
+          <a
+            href="https://www.tiendasnube.com.ar/tierrasdelzonda"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
             <div class="btn-icono">
-              <img src="./img/icons/Carrito.svg" alt="Icono Tienda Nube" class="w-full h-full object-contain" />
+              <img
+                src="./img/icons/Carrito.svg"
+                alt="Icono Tienda Nube"
+                class="w-full h-full object-contain"
+              />
             </div>
             <span class="btn-texto">Tienda Nube</span>
           </a>
-
         </nav>
       </div>
+
+      <!-- FOOTER MINIMALISTA -->
+      <footer class="relative z-10 w-full mt-8 pb-4">
+        <p
+          class="text-center text-xs font-['Montserrat'] text-blanco-crema opacity-50 tracking-wider"
+        >
+          © 2026 Finca Tierras del Zonda <br />
+        </p>
+      </footer>
     </main>
 
     <script src="./js/main.js"></script>
   </body>
-
 </html>
