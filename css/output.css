@@ -268,9 +268,6 @@
   .object-contain {
     object-fit: contain;
   }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
-  }
   .p-20 {
     padding: calc(var(--spacing) * 20);
   }
@@ -321,8 +318,8 @@
   }
   .txt-subtitulo {
     font-family: 'Baskerville';
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
     --tw-tracking: var(--tracking-wide);
@@ -332,8 +329,8 @@
   .txt-titulo {
     text-align: center;
     font-family: 'Baskerville';
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
     --tw-tracking: var(--tracking-wide);

@@ -17,11 +17,11 @@
     }
 
     .txt-subtitulo {
-        @apply text-lg font-normal font-['Baskerville'] uppercase tracking-wide;
+        @apply text-xl font-normal font-['Baskerville'] uppercase tracking-wide;
     }
 
     .txt-titulo {
-        @apply text-2xl font-normal font-['Baskerville'] uppercase tracking-wide text-center;
+        @apply text-4xl font-normal font-['Baskerville'] uppercase tracking-wide text-center;
     }
 
     .txt-bajada {
