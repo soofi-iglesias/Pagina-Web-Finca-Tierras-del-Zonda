@@ -1,0 +1,25 @@
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+
+@layer components {
+
+    /* El contenedor principal del botón */
+    .btn-linktree {
+        @apply relative w-full max-w-xl px-14 py-4 bg-blanco-off-white rounded-xl flex justify-center items-center gap-8 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:bg-blanco-crema active:scale-95;
+
+        /* La sombra exacta que te dio Figma (con el color marron-compost en rgba) */
+        box-shadow: 4px 4px 15px 0px rgba(34, 31, 19, 0.20);
+    }
+
+    /* El texto del botón */
+    .btn-texto {
+        @apply text-center text-verde-tierra text-xl font-extrabold font-['Montserrat'] uppercase z-10;
+    }
+
+    /* El contenedor del ícono (lo deja fijo a la izquierda) */
+    .btn-icono {
+        @apply absolute left-6 top-1/2 -translate-y-1/2 flex justify-center items-center w-8 h-8 z-10 text-verde-tierra;
+    }
+}

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <!-- 
+    Proyecto Integrador - Produccion Digital 2 - Pop Art Archive
+    Desarrollado por Sofía Iglesias
+    Universidad de Palermo - 1er Cuatrimestre 2026
+-->
+
+  <!-- 
+    Iniciar Tailwind en Terminal:
+        npm run dev
+-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linktree - Tierras del Zonda</title>
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="css/output.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-verde-tierra antialiased text-blanco-crema">
+    <main
+      class="relative min-h-screen flex flex-col justify-center items-center p-4 overflow-hidden gap-10"
+    >
+
+    <!-- Header -> Logo + Nombre + Leyenda -->
+      <div
+        class="relative z-10 flex flex-col justify-center items-center gap-10 w-full max-w-2xl"
+      >
+        <div class="flex flex-col justify-start items-center gap-7">
+          <img src="./img/Brand Mark.svg" alt="Icono Tierras del Zonda" class="w-24 h-24 rounded-full flex items-center justify-center overflow-hidden">
+          </div>
+
+          <div class="flex flex-col justify-start items-center gap-2">
+            <h2
+              class="text-2xl font-normal font-['Baskerville'] uppercase tracking-wide"
+            >
+              Finca
+            </h2>
+            <h1
+              class="text-4xl font-normal font-['Baskerville'] uppercase tracking-wide text-center"
+            >
+              Tierras del Zonda
+            </h1>
+          </div>
+
+          <p
+            class="text-sm font-normal font-['Montserrat'] text-center max-w-lg leading-relaxed"
+          >
+            Somos un emprendimiento familiar nacido en 2005. Desde el suelo
+            árido de San Juan, elaboramos un Aceite de Oliva Virgen Extra, que
+            nos enorgullece compartir en nuestra propia mesa.
+          </p>
+        </div>
+
+        <!-- SECCIÓN BOTONES (Links) -->
+        <nav class="flex flex-col justify-start items-center gap-4 w-full">
+          <!-- Botón WhatsApp -->
+          <a
+            href="https://wa.me/c/5491166126250"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
+            <div class="btn-icono">
+              <img src="./img/icons/whatsapp.svg" alt="Icono WhatsApp" class="w-7 h-7">
+            </div>
+            <span class="btn-texto">WhatsApp</span>
+          </a>
+
+          <!-- Botón Instagram -->
+          <a
+            href="https://www.instagram.com/tierrasdelzonda/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
+            <div class="btn-icono">
+              <img src="./img/icons/instagram.svg" alt="Icono Instagram" class="w-7 h-7">
+            </div>
+            <span class="btn-texto">Instagram</span>
+          </a>
+
+          <!-- Botón Facebook -->
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
+            <div class="btn-icono">
+              <img src="./img/icons/facebook.svg" alt="Icono Facebook" class="w-7 h-7">
+            </div>
+            <span class="btn-texto">Facebook</span>
+          </a>
+
+          <!-- Botón Nuestra Web -->
+          <a
+            href="https://www.tierrasdelzonda.com.ar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
+            <div class="btn-icono">
+              <img src="./img/icons/Sol.svg" alt="Icono Tierras del Zonda" class="w-7 h-7">
+            </div>
+            <span class="btn-texto">Nuestra Web</span>
+          </a>
+
+          <!-- Botón Tienda Nube -->
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linktree"
+          >
+            <div class="btn-icono">
+              <img src="./img/icons/Carrito.svg" alt="Icono Tienda Nube" class="w-7 h-7">
+            </div>
+            <span class="btn-texto">Tienda Nube</span>
+          </a>
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>
