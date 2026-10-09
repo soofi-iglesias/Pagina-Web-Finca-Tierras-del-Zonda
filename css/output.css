@@ -468,14 +468,6 @@
       margin-top: calc(var(--spacing) * 12);
       padding-bottom: calc(var(--spacing) * 6);
     }
-    .footer-texto {
-      font-size: var(--text-sm);
-      line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-    .footer-creditos {
-      font-size: var(--text-xs);
-      line-height: var(--tw-leading, var(--text-xs--line-height));
-    }
   }
 }
 @layer utilities {

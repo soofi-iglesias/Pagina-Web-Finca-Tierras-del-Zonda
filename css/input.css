@@ -99,14 +99,8 @@
             /* Un poco más de aire en compu */
         }
 
-        .footer-texto {
-            @apply text-sm;
-            /* Texto apenitas más grande */
-        }
 
-        .footer-creditos {
-            @apply text-xs;
-        }
+
     }
 }
 
